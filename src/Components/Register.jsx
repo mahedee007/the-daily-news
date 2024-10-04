@@ -1,14 +1,14 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const Register = () => {
-    return (
-        <div>
-            <Helmet>Register</Helmet>
-            <div className="w-1/2 mx-auto p-8 space-y-3 rounded-xl bg-black text-white mt-9">
-        <h1 className="text-2xl font-bold text-center">Login</h1>
-        <form  className="space-y-6">
+  return (
+    <div>
+      <Helmet>Register</Helmet>
+      <div className="w-1/2 mx-auto p-8 space-y-3 rounded-xl bg-black text-white mt-9">
+        <h1 className="text-2xl font-bold text-center">Register</h1>
+        <form className="space-y-6">
           <div className="space-y-1 text-sm">
             <label htmlFor="username" className="block dark:text-gray-600">
               Full Name
@@ -16,7 +16,6 @@ const Register = () => {
             <input
               type="text"
               name="username"
-             
               placeholder="Enter your full name"
               className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
             />
@@ -28,7 +27,6 @@ const Register = () => {
             <input
               type="text"
               name="photo-url"
-              
               placeholder="Photo URL"
               className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
             />
@@ -56,7 +54,6 @@ const Register = () => {
               placeholder="Password"
               className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
             />
-           
           </div>
           <button className="block w-full p-3 text-center rounded-sm text-gray-50 bg-violet-600">
             Register
@@ -100,11 +97,11 @@ const Register = () => {
         </div>
         <p className="text-xs text-center sm:px-6 dark:text-gray-600">
           Already have an account?
-         <Link to="/login">Sign in</Link>
+          <Link to="/login">Sign in</Link>
         </p>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Register;
